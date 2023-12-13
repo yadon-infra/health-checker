@@ -1,6 +1,10 @@
 package healthchecker
 
-import "os"
+import (
+	"os"
+
+	"github.com/yadon-infra/drill"
+)
 
 func main() {
 	urls := getEnv()
@@ -10,7 +14,7 @@ func main() {
 }
 
 func checkHealth(url string) {
-
+	drill.Get(url)
 }
 
 func getEnv() []string {
