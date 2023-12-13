@@ -1,5 +1,5 @@
 module github.com/yadon-infra/health-checker
 
-go 1.20
+go 1.21
 
-require github.com/yadon-infra/drill v0.1.0 // indirect
+require github.com/yadon-infra/drill v0.1.0
